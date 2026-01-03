@@ -4,7 +4,7 @@
 
 GlobeTrotter Lite is a lightweight trip planning web application that allows users to create trips, manage itineraries, track budgets, and visualize travel plans through an interactive dashboard.
 
-Demo Video link :
+Demo Video link : https://drive.google.com/drive/u/0/folders/1Uey4Vv4YJ-X41LKLEQ6Tx0AheqnB2YPR
 
 This project is ideal for hackathons, academic projects, and portfolio demonstrations.
 
