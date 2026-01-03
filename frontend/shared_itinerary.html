@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shared Trip | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>🌍 Shared Trip Itinerary</h2>
+    <p style="color: gray;">
+        This is a public, read-only view of the trip itinerary.
+        Editing is disabled.
+    </p>
+
+    <!-- Shareable URL -->
+    <div class="share-box">
+        <input type="text" id="shareLink" readonly>
+        <button onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+
+    <hr>
+
+    <!-- Trip Summary -->
+    <h3>Trip Summary</h3>
+    <p><b>Trip Name:</b> Budget Goa–Kerala Trip</p>
+    <p><b>Duration:</b> 5 Days</p>
+    <p><b>Total Budget:</b> ₹25,000</p>
+
+    <hr>
+
+    <!-- Itinerary View -->
+    <h3>Itinerary</h3>
+
+    <div class="day-card">
+        <h4>Day 1 – Goa</h4>
+        <p>🏖️ Beach Visit – ₹0</p>
+        <p>🍽️ Seafood Lunch – ₹800</p>
+    </div>
+
+    <div class="day-card">
+        <h4>Day 2 – Goa</h4>
+        <p>🚤 Water Sports – ₹1,500</p>
+    </div>
+
+    <div class="day-card">
+        <h4>Day 3 – Kerala</h4>
+        <p>🛶 Backwater Ride – ₹1,200</p>
+    </div>
+
+    <hr>
+
+    <!-- Actions -->
+    <button onclick="copyTrip()">📋 Copy This Trip</button>
+    <button onclick="goBack()">⬅ Back to Dashboard</button>
+
+</div>
+
+<script>
+    // Generate shareable URL (demo)
+    const shareInput = document.getElementById("shareLink");
+    shareInput.value = window.location.href;
+
+    function copyLink() {
+        shareInput.select();
+        document.execCommand("copy");
+        alert("🔗 Public link copied!");
+    }
+
+    function copyTrip() {
+        alert("📋 Trip copied! You can now edit it in your dashboard.");
+    }
+
+    function goBack() {
+        window.location.href = "dashboard.html";
+    }
+</script>
+
+</body>
+</html>

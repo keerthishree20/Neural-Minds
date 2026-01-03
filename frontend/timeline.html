@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Timeline | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Trip Timeline 🗓️</h2>
+    <p>Visual view of your full itinerary</p>
+
+    <button onclick="goBack()">⬅ Back to Dashboard</button>
+
+    <hr>
+
+    <!-- Timeline -->
+    <div class="timeline">
+
+        <div class="day">
+            <h3>Day 1 – Chennai</h3>
+            <ul>
+                <li>🌅 Morning: Marina Beach Walk</li>
+                <li>🍽️ Afternoon: Local Food Tour</li>
+                <li>🏛️ Evening: Museum Visit</li>
+            </ul>
+        </div>
+
+        <div class="day">
+            <h3>Day 2 – Pondicherry</h3>
+            <ul>
+                <li>🚗 Travel: Chennai → Pondicherry</li>
+                <li>🏖️ Beach Relaxation</li>
+                <li>☕ Café Hopping</li>
+            </ul>
+        </div>
+
+        <div class="day">
+            <h3>Day 3 – Pondicherry</h3>
+            <ul>
+                <li>🧘 Morning Yoga</li>
+                <li>🛍️ Local Market Shopping</li>
+                <li>🌇 Sunset Promenade Walk</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    function goBack() {
+        window.location.href = "dashboard.html";
+    }
+</script>
+
+</body>
+</html>

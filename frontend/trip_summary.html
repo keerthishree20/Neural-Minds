@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Trip Summary | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2 id="tripTitle"></h2>
+
+    <h3>📍 Cities Added</h3>
+    <ul id="cityList"></ul>
+
+    <h3>🎯 Activities Added</h3>
+    <ul id="activityList"></ul>
+
+    <br>
+    <button onclick="goDashboard()">⬅ Back to Dashboard</button>
+
+</div>
+
+<script>
+    // Trip name
+    const tripName = localStorage.getItem("tripName");
+    document.getElementById("tripTitle").innerText =
+        "Trip: " + (tripName || "My Trip");
+
+    // Cities
+    const cities = JSON.parse(localStorage.getItem("tripCities")) || [];
+    const cityList = document.getElementById("cityList");
+
+    if (cities.length === 0) {
+        cityList.innerHTML = "<li>No cities added yet</li>";
+    } else {
+        cities.forEach(city => {
+            const li = document.createElement("li");
+            li.innerText = city;
+            cityList.appendChild(li);
+        });
+    }
+
+    // Activities
+    const activities = JSON.parse(localStorage.getItem("tripActivities")) || [];
+    const activityList = document.getElementById("activityList");
+
+    if (activities.length === 0) {
+        activityList.innerHTML = "<li>No activities added yet</li>";
+    } else {
+        activities.forEach(act => {
+            const li = document.createElement("li");
+            li.innerText = act;
+            activityList.appendChild(li);
+        });
+    }
+
+    function goDashboard() {
+        window.location.href = "dashboard.html";
+    }
+</script>
+
+</body>
+</html>

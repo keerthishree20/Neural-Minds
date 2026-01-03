@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity Search | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Explore Activities 🎯</h2>
+    <p>Select experiences to enrich your trip</p>
+
+    <!-- Filters -->
+    <select id="typeFilter" onchange="filterActivities()">
+        <option value="">All Types</option>
+        <option value="Sightseeing">Sightseeing</option>
+        <option value="Food">Food</option>
+        <option value="Adventure">Adventure</option>
+    </select>
+
+    <select id="costFilter" onchange="filterActivities()">
+        <option value="">All Costs</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <div id="activityList"></div>
+
+    <br>
+    <button onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script src="js/activity.js"></script>
+</body>
+</html>

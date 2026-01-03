@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>🛠️ Admin Dashboard</h2>
+    <p>Platform usage & analytics overview (Admin only)</p>
+
+    <hr>
+
+    <!-- Platform Stats -->
+    <h3>Platform Overview</h3>
+    <ul>
+        <li>👥 Total Users: 120</li>
+        <li>✈️ Trips Created: 340</li>
+        <li>🌍 Cities Covered: 45</li>
+        <li>📈 Active Users Today: 62</li>
+    </ul>
+
+    <hr>
+
+    <!-- Popular Cities -->
+    <h3>Top Cities</h3>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>City</th>
+            <th>Trips</th>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>72</td>
+        </tr>
+        <tr>
+            <td>Jaipur</td>
+            <td>60</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Popular Activities -->
+    <h3>Popular Activities</h3>
+    <ul>
+        <li>🏖️ Beach Visits</li>
+        <li>🍽️ Food Tours</li>
+        <li>🏞️ Nature Sightseeing</li>
+        <li>🛶 Adventure Sports</li>
+    </ul>
+
+    <hr>
+
+    <!-- User Management (Conceptual) -->
+    <h3>User Management</h3>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>User</th>
+            <th>Trips</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>demo.user@email.com</td>
+            <td>4</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>sample.user@email.com</td>
+            <td>2</td>
+            <td>Inactive</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <button onclick="goBack()">⬅ Back to Dashboard</button>
+
+</div>
+
+<script>
+    function goBack() {
+        window.location.href = "dashboard.html";
+    }
+</script>
+
+</body>
+</html>

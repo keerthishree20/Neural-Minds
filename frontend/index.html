@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Trip | GlobeTrotter Lite</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Create a Trip ✈️</h2>
+        <p>Plan your journey in a few simple steps</p>
+
+        <!-- Trip Creation Form -->
+        <form id="tripForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Trip Name"
+                required
+            >
+
+            <input
+                type="date"
+                id="start"
+                required
+            >
+
+            <input
+                type="date"
+                id="end"
+                required
+            >
+
+            <input
+                type="number"
+                id="budget"
+                placeholder="Budget (₹)"
+                required
+            >
+
+            <button type="submit">
+                Create Trip
+            </button>
+
+        </form>
+
+        <!-- Status message -->
+        <p id="message"></p>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

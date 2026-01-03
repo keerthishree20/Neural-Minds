@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 🔹 TOP BAR WITH PROFILE -->
+    <div class="top-bar">
+        <h3>GlobeTrotter Lite 🌍</h3>
+        <div class="profile-area" onclick="openProfile()">
+            <img src="images/profile.png" alt="Profile" class="profile-pic">
+            <span>My Profile</span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2>Welcome back, Traveller 🌍</h2>
+        <p>Your trip planning dashboard</p>
+
+        <!-- Quick Actions -->
+        <button onclick="goToCreateTrip()">➕ Plan New Trip</button>
+
+        <button onclick="window.location.href='trip_summary.html'">
+            📋 View My Trip
+        </button>
+
+        <button onclick="window.location.href='budget.html'">
+            💰 View Budget Breakdown
+        </button>
+
+        <button onclick="window.location.href='timeline.html'">
+            🗓️ View Trip Timeline
+        </button>
+
+        <button onclick="window.location.href='shared_itinerary.html'">
+            🔗 Share / View Public Itinerary
+        </button>
+
+        <hr>
+
+        <!-- Recent Trips -->
+        <h3>Recent Trips</h3>
+        <ul id="tripList">
+            <li>My Latest Trip</li>
+        </ul>
+
+        <hr>
+
+        <!-- Budget Highlights -->
+        <h3>Budget Highlights</h3>
+        <div id="budgetBox">
+            <input type="number" id="tripId" placeholder="Enter Trip ID">
+            <br><br>
+            <button onclick="getBudget()">Check Budget</button>
+            <div id="result"></div>
+        </div>
+
+        <hr>
+
+        <!-- Recommended Destinations -->
+        <h3>Recommended Destinations ✨</h3>
+        <ul>
+            <li>Goa – Budget Friendly Beach Trip</li>
+            <li>Kerala – Nature & Backwaters</li>
+            <li>Jaipur – Culture & Heritage</li>
+        </ul>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

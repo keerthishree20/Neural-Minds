@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Itinerary Builder | GlobeTrotter Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Itinerary Builder 🗺️</h2>
+<p>Create your day-wise trip plan</p>
+
+<!-- Add Stop -->
+<h3>Add Stop</h3>
+<input type="text" id="city" placeholder="City Name">
+<input type="date" id="fromDate">
+<input type="date" id="toDate">
+<button onclick="addStop()">➕ Add Stop</button>
+
+<hr>
+
+<!-- Stops List -->
+<h3>Your Itinerary</h3>
+<div id="stops"></div>
+
+<button onclick="goBack()">⬅ Back to Dashboard</button>
+
+<script src="js/itinerary.js"></script>
+</body>
+</html>
